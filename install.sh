@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cp -i -b -v files/.* ~
+cp -i -v files/.* ~
