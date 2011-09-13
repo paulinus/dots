@@ -1,0 +1,35 @@
+alias ..='cd ..'
+alias catala='aspell --lang=catala check'
+alias corrige='aspell --lang=francais check'
+alias d='du -s --block-size=1M * . | sort -n'
+alias f='find . | grep'
+
+alias rm='rm -i'
+
+alias l='ls --color'
+alias la='l -a'
+alias ll='l -l'
+alias lla='l -l -a'
+
+alias open='gnome-open'
+
+# Svn diff
+alias sd='svn diff --diff-cmd=colordiff'
+alias gsd='svnvimdiff -g'
+
+alias scipy='ipython -p scipy'
+alias remake='make clean;make'
+alias v='ctags -R *.c *.cc *.cpp *.cxx;vim'
+
+alias ssh-inria='ssh -t gargallo@login-serv.inrialpes.fr ssh columba'
+
+alias jhead-rename-with-date='jhead -nf%Y%m%d-%H%M%S'
+
+########################
+## coses de l'INRIA
+########################
+alias windows='rdesktop -f -a24 sauron'
+alias maple='/softs/stow/maple-9/bin/xmaple'
+alias imprimeix='lpr -o Duplex=DuplexNoTumble -PlH212a'
+alias imprimeixPetit='lpr -o number-up=2 -o sides=two-sided-long-edge -PlH212a'
+alias scratch='cd /local_scratch/gargallo'
