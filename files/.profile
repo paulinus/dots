@@ -23,9 +23,3 @@ export PYTHONPATH=$HOME/pro
 export NUMERIX=numpy
 
 
-
-
-if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
-fi
-
