@@ -5,6 +5,7 @@ alias corrige='aspell --lang=francais check'
 
 alias d='du -s --block-size=1M * . | sort -n'
 alias f='find . | grep'
+alias td='grep TODO * -R'
 
 alias rm='rm -i'
 
