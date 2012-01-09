@@ -20,7 +20,6 @@ alias open='gnome-open'
 alias sd='svn diff --diff-cmd=colordiff'
 alias gsd='svnvimdiff -g'
 
-alias scipy='ipython -p scipy'
 alias remake='make clean;make'
 alias v='ctags -R *.c *.cc *.cpp *.cxx;vim'
 
