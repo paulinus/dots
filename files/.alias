@@ -5,6 +5,7 @@ alias corrige='aspell --lang=francais check'
 
 alias d='du -s --block-size=1M * . | sort -n'
 alias f='find . | grep'
+alias td='grep TODO * -R'
 
 alias rm='rm -i'
 
@@ -19,7 +20,6 @@ alias gvim='mvim'
 alias sd='svn diff --diff-cmd=colordiff'
 alias gsd='svnvimdiff -g'
 
-alias scipy='ipython -p scipy'
 alias remake='make clean;make'
 alias v='ctags -R *.c *.cc *.cpp *.cxx;vim'
 
