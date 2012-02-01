@@ -13,6 +13,9 @@ set backspace=indent,eol,start
 
 set autoindent		" always set autoindenting on
 
+set linebreak           " break lines only between words (visually only)
+set showbreak=>\        " show this in front of wrapped lines 
+
 set nobackup            " don't keep backup files
 
 set history=50		" keep 50 lines of command line history
