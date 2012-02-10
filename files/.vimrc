@@ -78,7 +78,7 @@ noremap S $
 noremap T 15k
 noremap N 15j
 inoremap <tab> <esc>l
-" formateja paragraf
+" formateja paragraf:
 noremap J gqap
 
 set vb       " visual bell
