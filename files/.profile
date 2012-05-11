@@ -19,7 +19,7 @@ export DYLD_LIBRARY_PATH=$HOME/local/lib
 export VXL_DIR=$HOME/local/share/vxl/cmake
 
 # Python stuff
-export PYTHONPATH=$HOME/pro
+export PYTHONPATH=$HOME/pro:$HOME/local/lib/python2.6/site-packages/
 export NUMERIX=numpy
 
 
