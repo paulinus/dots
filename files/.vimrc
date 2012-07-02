@@ -1,4 +1,3 @@
-
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
@@ -79,7 +78,7 @@ noremap T 15k
 noremap N 15j
 inoremap <tab> <esc>l
 " formateja paragraf:
-noremap j gqap
+noremap j gqq
 
 set vb       " visual bell
 
