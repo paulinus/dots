@@ -79,7 +79,7 @@ noremap T 15k
 noremap N 15j
 inoremap <tab> <esc>l
 " formateja paragraf:
-noremap J gqap
+noremap j gqap
 
 set vb       " visual bell
 
@@ -97,3 +97,7 @@ set sw=2
 
 " CUDA
 au BufNewFile,BufRead *.cu set ft=cu
+
+" TWIG
+au BufNewFile,BufRead *.twig set ft=html
+

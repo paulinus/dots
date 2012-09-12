@@ -26,3 +26,5 @@ alias v='ctags -R *.c *.cc *.cpp *.cxx;vim'
 
 alias jhead-rename-with-date='jhead -nf%Y%m%d-%H%M%S'
 
+# MAMP
+alias php='/Applications/MAMP/bin/php/php5.4.4/bin/php'

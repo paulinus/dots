@@ -4,6 +4,7 @@
 ###############################################################################
 
 export LANG=en_US.utf-8
+export LC_ALL=en_US.utf-8
 export EDITOR=/usr/bin/vim
 export CLICOLOR
 
@@ -19,12 +20,16 @@ export DYLD_LIBRARY_PATH=$HOME/local/lib
 export VXL_DIR=/Users/paulinus/local/share/vxl/cmake/
 
 # Python stuff
-export PYTHONPATH=$HOME/local/lib/python2.5/site-packages/
+export PYTHONPATH=$HOME/local/lib/python2.7/site-packages/
 export NUMERIX=numpy
 
 # CUDA
 export PATH=/usr/local/cuda/bin:$PATH
 export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:$DYLD_LIBRARY_PATH
+
+# MySQL
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/:$DYLD_LIBRARY_PATH
+export PATH=/usr/local/mysql/bin:$PATH
 
 # MacPorts Installer addition on 2010-12-24_at_09:36:49: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
