@@ -87,8 +87,8 @@ set vb       " visual bell
 if has("gui_running")
 	colorscheme desert
         set guifont=Courier\ 10\ Pitch\ 10
-	set columns=80
-	set lines=50
+	"set columns=80
+	"set lines=50
 endif 
 
 set expandtab
