@@ -38,7 +38,10 @@ proml
 ###############################################################################
 # Bash options
 ###############################################################################
-export HISTCONTROL=ignoredups
+export HISTCONTROL=ignoredups   # no duplicate lines
+export HISTSIZE=1000000         # long history
+shopt -s histappend             # append new commands to history
+export PROMPT_COMMAND='history -n; history -a'  # save history after every command
 
 . ~/.alias 
 

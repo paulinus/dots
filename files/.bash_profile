@@ -8,6 +8,8 @@ export LC_ALL=en_US.utf-8
 export EDITOR=/usr/bin/vim
 export CLICOLOR
 
+export PATH=/usr/local/bin:$PATH
+
 # Enable $HOME/local
 export PATH=$HOME/local/bin:$PATH
 export C_INCLUDE_PATH=$HOME/local/include
@@ -17,10 +19,11 @@ export LD_LIBRARY_PATH=$HOME/local/lib64:$HOME/local/lib
 export DYLD_LIBRARY_PATH=$HOME/local/lib
 
 # VXL
-export VXL_DIR=/Users/paulinus/local/share/vxl/cmake/
+export VXL_DIR=$HOME/local/share/vxl/cmake/
 
 # Python stuff
 export PYTHONPATH=$HOME/local/lib/python2.7/site-packages/
+export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
 export NUMERIX=numpy
 
 # CUDA
@@ -30,9 +33,6 @@ export NUMERIX=numpy
 # MySQL
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/:$DYLD_LIBRARY_PATH
 export PATH=/usr/local/mysql/bin:$PATH
-
-# MacPorts Installer addition on 2010-12-24_at_09:36:49: adding an appropriate PATH variable for use with MacPorts.
-#export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 
 if [ -f ~/.bashrc ]; then
