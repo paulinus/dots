@@ -36,12 +36,21 @@ proml
 
 
 ###############################################################################
+# Share bash history between terminals
+###############################################################################
+
+export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
+export HISTSIZE=100000                   # big big history
+export HISTFILESIZE=100000               # big big history
+shopt -s histappend                      # append to history, don't overwrite it
+
+# Save and reload the history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+
+###############################################################################
 # Bash options
 ###############################################################################
-export HISTCONTROL=ignoredups   # no duplicate lines
-export HISTSIZE=1000000         # long history
-shopt -s histappend             # append new commands to history
-export PROMPT_COMMAND='history -n; history -a'  # save history after every command
 
 . ~/.alias 
 
