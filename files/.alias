@@ -9,12 +9,14 @@ alias td='grep TODO * -R'
 
 alias rm='rm -i'
 
-alias l='ls --color'
+alias l='ls -G'
 alias la='l -a'
 alias ll='l -l'
 alias lla='l -l -a'
 
-alias open='gnome-open'
+alias which='echo Fuck which. Use type.'
+
+alias gvim='mvim'
 
 # Svn diff
 alias sd='svn diff --diff-cmd=colordiff'
@@ -22,5 +24,7 @@ alias gsd='svnvimdiff -g'
 
 alias remake='make clean;make'
 alias v='ctags -R *.c *.cc *.cpp *.cxx;vim'
+
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 
 alias jhead-rename-with-date='jhead -nf%Y%m%d-%H%M%S'

@@ -78,7 +78,7 @@ noremap T 15k
 noremap N 15j
 inoremap <tab> <esc>l
 " formateja paragraf:
-noremap j gqq
+noremap j gqap
 
 set vb       " visual bell
 
@@ -86,8 +86,8 @@ set vb       " visual bell
 if has("gui_running")
 	colorscheme desert
         set guifont=Courier\ 10\ Pitch\ 10
-	set columns=80
-	set lines=50
+	"set columns=80
+	"set lines=50
 endif 
 
 set expandtab
@@ -96,3 +96,7 @@ set sw=2
 
 " CUDA
 au BufNewFile,BufRead *.cu set ft=cu
+
+" TWIG
+au BufNewFile,BufRead *.twig set ft=html
+
