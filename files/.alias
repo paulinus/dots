@@ -9,6 +9,7 @@ alias td='grep TODO * -R'
 
 alias rm='rm -i'
 
+alias ls='ls --color=auto'
 alias l='ls -G'
 alias la='l -a'
 alias ll='l -l'
@@ -25,6 +26,6 @@ alias gsd='svnvimdiff -g'
 alias remake='make clean;make'
 alias v='ctags -R *.c *.cc *.cpp *.cxx;vim'
 
-alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+alias subl="/home/pgargallo/local/sources/Sublime\ Text\ 2/sublime_text"
 
 alias jhead-rename-with-date='jhead -nf%Y%m%d-%H%M%S'

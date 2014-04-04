@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILES=".alias .bash_profile .bashrc .gitconfig .vimrc"
+FILES=".alias .profile .bash_profile .bashrc .gitconfig .vimrc"
 
 for file in $FILES; do
   mv ~/$file ~/$file.bak
