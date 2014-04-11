@@ -25,7 +25,8 @@ export VXL_DIR=$HOME/local/share/vxl/cmake/
 
 # Python stuff
 export PYTHONPATH=$HOME/local/lib/python2.7/site-packages/
-export PYTHONPATH="/usr/local/lib/python2.7/site-packages:$PYTHONPATH"
+export PYTHONPATH=$HOME/local/lib/python2.7/dist-packages/:$PYTHONPATH
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 export NUMERIX=numpy
 
 # CUDA

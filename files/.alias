@@ -26,6 +26,4 @@ alias gsd='svnvimdiff -g'
 alias remake='make clean;make'
 alias v='ctags -R *.c *.cc *.cpp *.cxx;vim'
 
-alias subl="/home/pgargallo/local/sources/Sublime\ Text\ 2/sublime_text"
-
 alias jhead-rename-with-date='jhead -nf%Y%m%d-%H%M%S'

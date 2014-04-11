@@ -25,12 +25,12 @@ function proml {
     ;;
   esac
 
-PS1="${TITLEBAR}\
+  PS1="${TITLEBAR}\
 $LIGHT_GREEN\$?\
 $LIGHT_RED\u@\h:$YELLOW\w$LIGHT_GREEN\$(parse_git_branch)\
 $LIGHT_GREEN\$ $LIGHT_GRAY"
-PS2='> '
-PS4='+ '
+  PS2='> '
+  PS4='+ '
 }
 proml
 
