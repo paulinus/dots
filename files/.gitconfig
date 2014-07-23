@@ -3,3 +3,5 @@
 	email = pau.gargallo@gmail.com
 [color]
 	ui = auto
+[push]
+	default = current

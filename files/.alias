@@ -17,8 +17,6 @@ alias lla='l -l -a'
 
 alias which='echo Fuck which. Use type.'
 
-alias gvim='mvim'
-
 # Svn diff
 alias sd='svn diff --diff-cmd=colordiff'
 alias gsd='svnvimdiff -g'
