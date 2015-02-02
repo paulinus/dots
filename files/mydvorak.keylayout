@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!-- Fri, 24 Feb 2006 Generated from KCHR: "Dvorak" -->
-<!--Last edited by Ukelele version 2.1.6 on 2011-07-20 at 13:26 (GMT+02:00)-->
+<!--Last edited by Ukelele version 2.2.8 on 2014-11-14 at 20:37 (GMT+1)-->
 <keyboard group="0" id="16300" name="Dvorak" maxout="1">
     <layouts>
         <layout first="0" last="0" modifiers="commonModifiers" mapSet="ANSI"/>
@@ -53,7 +53,7 @@
             <key code="7" output="q"/>
             <key code="8" output="j"/>
             <key code="9" output="k"/>
-            <key code="10" output="§"/>
+            <key code="10" output="`"/>
             <key code="11" output="x"/>
             <key code="12" output="&#x0027;"/>
             <key code="13" output=","/>
@@ -171,7 +171,7 @@
             <key code="7" output="Q"/>
             <key code="8" output="J"/>
             <key code="9" output="K"/>
-            <key code="10" output="±"/>
+            <key code="10" output="~"/>
             <key code="11" output="X"/>
             <key code="12" output="&#x0022;"/>
             <key code="13" output="&#x003C;"/>
@@ -518,7 +518,7 @@
             <key code="0" output="Á"/>
             <key code="1" output="Ó"/>
             <key code="2" output="É"/>
-            <key code="3" output="Ù"/>
+            <key code="3" output="Ú"/>
             <key code="4" output="Î"/>
             <key code="5" output="Í"/>
             <key code="6" output="Ä"/>
@@ -530,7 +530,7 @@
             <key code="12" output="À"/>
             <key code="13" output="Ò"/>
             <key code="14" output="È"/>
-            <key code="15" output="Ú"/>
+            <key code="15" output="Ù"/>
             <key code="16" output="Ï"/>
             <key code="17" output="Ì"/>
             <key code="18" output="Â"/>
@@ -996,18 +996,6 @@
             <when state="s4" output="˜"/>
             <when state="s5" output="`"/>
         </action>
-        <action id="¨">
-            <when state="none" next="s2"/>
-        </action>
-        <action id="´">
-            <when state="none" next="s1"/>
-        </action>
-        <action id="ˆ">
-            <when state="none" next="s3"/>
-        </action>
-        <action id="˜">
-            <when state="none" next="s4"/>
-        </action>
         <action id="A">
             <when state="none" output="A"/>
             <when state="s1" output="Á"/>
@@ -1100,6 +1088,18 @@
         <action id="y">
             <when state="none" output="y"/>
             <when state="s2" output="ÿ"/>
+        </action>
+        <action id="¨">
+            <when state="none" next="s2"/>
+        </action>
+        <action id="´">
+            <when state="none" next="s1"/>
+        </action>
+        <action id="ˆ">
+            <when state="none" next="s3"/>
+        </action>
+        <action id="˜">
+            <when state="none" next="s4"/>
         </action>
     </actions>
     <terminators>
