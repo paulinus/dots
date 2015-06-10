@@ -3,7 +3,7 @@ alias ..='cd ..'
 alias catala='aspell --lang=catala check'
 alias corrige='aspell --lang=francais check'
 
-alias d='du -s --block-size=1M * . | sort -n'
+alias d='du -s -m ./* . | sort -n'
 alias f='find . | grep'
 alias td='grep TODO * -R'
 
@@ -14,8 +14,6 @@ alias l='ls'
 alias la='l -a'
 alias ll='l -l'
 alias lla='l -l -a'
-
-alias which='echo Fuck which. Use type.'
 
 # Svn diff
 alias sd='svn diff --diff-cmd=colordiff'
