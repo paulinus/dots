@@ -65,3 +65,5 @@ if hash brew 2>/dev/null; then
 fi
 
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

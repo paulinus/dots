@@ -1,11 +1,9 @@
 alias ..='cd ..'
 
-alias catala='aspell --lang=catala check'
-alias corrige='aspell --lang=francais check'
-
 alias d='du -s -m ./* . | sort -n'
 alias f='find . | grep'
 alias td='grep TODO * -R'
+alias h='history | grep'
 
 alias rm='rm -i'
 
@@ -15,11 +13,4 @@ alias la='l -a'
 alias ll='l -l'
 alias lla='l -l -a'
 
-# Svn diff
-alias sd='svn diff --diff-cmd=colordiff'
-alias gsd='svnvimdiff -g'
-
 alias remake='make clean;make'
-alias v='ctags -R *.c *.cc *.cpp *.cxx;vim'
-
-alias jhead-rename-with-date='jhead -nf%Y%m%d-%H%M%S'

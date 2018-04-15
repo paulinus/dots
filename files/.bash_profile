@@ -18,34 +18,30 @@ export C_INCLUDE_PATH=$HOME/local/include:/usr/local/include
 export CPLUS_INCLUDE_PATH=$HOME/local/include:/usr/local/include
 export OBJC_INCLUDE_PATH=$HOME/local/include
 export LD_LIBRARY_PATH=$HOME/local/lib64:$HOME/local/lib:/usr/local/lib
-export DYLD_LIBRARY_PATH=$HOME/local/lib64:$HOME/local/lib #:/usr/local/lib
+export DYLD_LIBRARY_PATH=$HOME/local/lib64:$HOME/local/lib
 
 # Python stuff
-export PYTHONPATH=/Library/Python/2.7/site-packages
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:${PYTHONPATH}
-export PYTHONPATH=$HOME/local/lib/python2.7/site-packages/:${PYTHONPATH}
-export PYTHONPATH=$HOME/pro/OpenSfM/:${PYTHONPATH}
-export PYTHONPATH=$HOME/pro/mapillary_ip/:${PYTHONPATH}
-export PYTHONPATH=$HOME/pro/mapillary_vision:${PYTHONPATH}
-export PYTHONPATH=$HOME/pro/mapillary_sfm/:${PYTHONPATH}
-export PYTHONPATH=$HOME/pro/pika/:${PYTHONPATH}
-
+export PATH=$HOME/Library/Python/2.7/bin:$PATH
 
 # Postgress
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
-# rvm
-export PATH="$PATH:$HOME/.rvm/bin"
+# nvm
+# export NVM_DIR="$HOME/.nvm"
+# . "/usr/local/opt/nvm/nvm.sh"
 
-# Chef
-export BOXEN_CHEF_USER=paulinus
+# Node.js
+export PATH="node_modules/.bin:$PATH"
 
-export MAPILLARY_CLUSTER_DIR=/Users/paulinus/pro/mapillary_cluster
+# Mapillary
+export MAPILLARY_CLUSTER_DIR=$HOME/pro/mapillary_cluster
+export PATH="$PATH:$MAPILLARY_CLUSTER_DIR/bin"
+export MAP_ENV=development
+
+# Brew
+export HOMEBREW_GITHUB_API_TOKEN=b793d073e5c5f4c3e72f2819cf0296c505b72ed3
 
 
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
-
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
