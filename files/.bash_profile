@@ -38,9 +38,10 @@ export MAPILLARY_CLUSTER_DIR=$HOME/pro/mapillary_cluster
 export PATH="$PATH:$MAPILLARY_CLUSTER_DIR/bin"
 export MAP_ENV=development
 
-# Brew
-export HOMEBREW_GITHUB_API_TOKEN=b793d073e5c5f4c3e72f2819cf0296c505b72ed3
 
+if [ -f ~/.secret_bash_profile ]; then
+  . ~/.secret_bash_profile
+fi
 
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
