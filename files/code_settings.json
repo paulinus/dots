@@ -1,0 +1,20 @@
+{
+    "files.autoSave": "afterDelay",
+    "window.zoomLevel": -1,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": true
+    },
+    "workbench.iconTheme": "vs-minimal",
+    "python.linting.pep8Enabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "extensions.ignoreRecommendations": false,
+    "files.trimTrailingWhitespace": true,
+    "workbench.panel.location": "bottom",
+    "git.autofetch": true
+}
