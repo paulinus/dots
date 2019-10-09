@@ -34,9 +34,7 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 export PATH="node_modules/.bin:$PATH"
 
 # Mapillary
-export MAPILLARY_CLUSTER_DIR=$HOME/pro/mapillary_cluster
-export PATH="$PATH:$MAPILLARY_CLUSTER_DIR/bin"
-export MAP_ENV=development
+. ~/local/bin/setup_mapillary_env_vars.sh
 
 
 if [ -f ~/.secret_bash_profile ]; then
