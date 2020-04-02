@@ -1,20 +1,15 @@
 {
+    "window.zoomLevel": 0,
     "files.autoSave": "afterDelay",
-    "window.zoomLevel": -1,
+    "breadcrumbs.enabled": true,
     "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
         "**/*.pyc": true
     },
-    "workbench.iconTheme": "vs-minimal",
-    "python.linting.pep8Enabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false,
-    "extensions.ignoreRecommendations": false,
-    "files.trimTrailingWhitespace": true,
-    "workbench.panel.location": "bottom",
-    "git.autofetch": true
+    "editor.rulers": [72, 80, 90],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#222"
+    },
+    "python.dataScience.sendSelectionToInteractiveWindow": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "liveshare.featureSet": "insiders"
 }
