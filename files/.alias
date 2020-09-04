@@ -7,7 +7,7 @@ alias h='history | grep'
 
 alias rm='rm -i'
 
-alias ls='ls -G'
+alias ls='ls -G --color=auto'
 alias l='ls'
 alias la='l -a'
 alias ll='l -l'
