@@ -39,6 +39,7 @@ proml
 # Share bash history between terminals
 ###############################################################################
 
+export SHELL_SESSION_HISTORY=0
 export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
 export HISTSIZE=100000                   # big big history
 export HISTFILESIZE=100000               # big big history
@@ -57,13 +58,18 @@ export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 if [ -f /etc/bash_completion ]; then
   . /etc/bash_completion
 fi
-
+ 
 if hash brew 2>/dev/null; then
   if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
   fi
 fi
 
-
+# Import all autocompletion scripts
+if [ -d $HOME/.bash_completion ]; then
+   for completion_file in $HOME/.bash_completion/*.bash; do
+      source $completion_file
+   done
+fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
